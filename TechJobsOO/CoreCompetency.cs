@@ -8,6 +8,8 @@ namespace TechJobsOO
         private string value;
 
         // TODO: Change the fields to auto-implemented properties.
+        public string Id { get; set; }
+        public string Value { get; set; }
 
         public CoreCompetency()
         {
@@ -36,5 +38,5 @@ namespace TechJobsOO
             return value;
         }
     }
-    }
+    
 }
