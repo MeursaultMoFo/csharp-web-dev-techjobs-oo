@@ -1,19 +1,19 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class PositionType
+    public class PositionType : JobField
     {
-        public int Id { get; }
+        /*public int Id { get; }
         private static int nextId = 1;
-        public string Value { get; set; }
+        public string Value { get; set; }*/
 
-        public PositionType()
+        public PositionType(string value) : base(value)
         {
-            Id = nextId;
-            nextId++;
+           /* Id = nextId;
+            nextId++;*/
         }
 
-        public PositionType(string value) : this()
+        /*public PositionType(string value) : this()
         {
             Value = value;
         }
@@ -34,6 +34,6 @@ namespace TechJobsOO
         public override int GetHashCode()
         {
             return HashCode.Combine(Id, Value);
-        }
+        }*/
     }
 }

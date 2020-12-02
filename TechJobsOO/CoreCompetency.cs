@@ -1,23 +1,24 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class CoreCompetency
+    public class CoreCompetency : JobField
     {
         // private int id;
-        private static int nextId = 1;
+        /*private static int nextId = 1;*/
         // private string value;
 
         // TODO: Change the fields to auto-implemented properties.
-        public int Id { get; }
-        public string Value { get; set; }
+        /*public int Id { get; }
+        public string Value { get; set; }*/
 
-        public CoreCompetency()
+        public CoreCompetency(string value) : base(value)
         {
-            Id = nextId;
-            nextId++;
+            /*Id = nextId;
+            nextId++;*/
         }
+        
 
-        public CoreCompetency(string v) : this()
+        /*public CoreCompetency(string v) : this()
         {
             Value = v;
         }
@@ -36,7 +37,7 @@ namespace TechJobsOO
         public override string ToString()
         {
             return Value;
-        }
+        }*/
     }
     
 }

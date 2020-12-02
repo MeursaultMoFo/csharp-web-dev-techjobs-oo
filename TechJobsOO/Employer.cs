@@ -1,30 +1,31 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class Employer
+    public class Employer : JobField
     {
-        public int Id { get; }
+        /*public int Id { get; }
         private static int nextId = 1;
-        public string Value { get; set; }
-
-        public Employer()
+        public string Value { get; set; }*/
+        
+        //replaced public Employer() with:
+        public Employer(string value) : base(value)
         {
-            Id = nextId;
-            nextId++;
+            /*Id = nextId;
+            nextId++;*/
         }
 
-        public Employer(string value) : this()
+        /*public Employer(string value) : this()
         {
             Value = value;
-        }
+        }*/
 
-        public override bool Equals(object obj)
+        /*public override bool Equals(object obj)
         {
             return obj is Employer employer &&
                    Id == employer.Id;
-        }
+        }*/
 
-        public override int GetHashCode()
+        /*public override int GetHashCode()
         {
             return HashCode.Combine(Id);
         }
@@ -32,6 +33,6 @@ namespace TechJobsOO
         public override string ToString()
         {
             return Value;
-        }
+        }*/
     }
 }

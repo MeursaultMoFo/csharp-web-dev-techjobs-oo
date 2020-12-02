@@ -23,7 +23,7 @@ namespace TechJobTests
             Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
             Assert.AreEqual(1, job1.Id);
             Assert.IsTrue("Product tester" == job1.Name);
-            Assert.IsTrue(job1.EmployerName.Value == "ACME");
+            Assert.IsTrue("ACME" == job1.EmployerName.Value);
             Assert.IsTrue("Desert" == job1.EmployerLocation.Value);
             Assert.IsTrue("Quality control" == job1.JobType.Value);
             Assert.IsTrue("Persistence" == job1.JobCoreCompetency.Value);
