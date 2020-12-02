@@ -59,7 +59,9 @@ namespace TechJobTests
             Job job2 = new Job("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));
             string test = job2.ToString();
             //is this enough?
-            Assert.AreEqual(test, "\nID: 1\nName: Web Developer\nEmployer: LaunchCode\nLocation: St. Louis\nPosition Type: Front-end developer\nCore Competency: JavaScript\n");
+            Assert.AreEqual(test, "\nID: 7\nName: Web Developer\nEmployer: LaunchCode\nLocation: St. Louis\nPosition Type: Front-end developer\nCore Competency: JavaScript\n");
+            //Console.WriteLine(test);
+            //Console.WriteLine("\nID: 1\nName: Web Developer\nEmployer: LaunchCode\nLocation: St. Louis\nPosition Type: Front-end developer\nCore Competency: JavaScript\n");
 
         }
 
@@ -72,13 +74,14 @@ namespace TechJobTests
             string test = empty.ToString();
             //Assert.AreEqual(empty.Name, nothing);
             //is this enough?
-            Assert.AreEqual(test, "\nID: 1" + "\nName: " + nothing + "\nEmployer: " + nothing + "\nLocation: " + nothing + "\nPosition Type: " + nothing + "\nCore Competency: " + nothing + "\n");
+            Assert.AreEqual(test, "\nID: 6" + "\nName: " + nothing + "\nEmployer: " + nothing + "\nLocation: " + nothing + "\nPosition Type: " + nothing + "\nCore Competency: " + nothing + "\n");
             
 
         }
 
-        /*[TestMethod]
-        public void TestforEmpty()
+        // bonus test = If a Job object ONLY contains data for the id field, the method should return, “OOPS! This job does not seem to exist.”
+       /* [TestMethod]
+        public void BonusTest()
         {
 
         }*/
